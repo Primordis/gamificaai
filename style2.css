@@ -1,9 +1,3 @@
-/* Códigos GIT para depois: PS: Git status descreve o que modifiquei, nas páginas em si (index.html e style2.css)
-Git add . 
-Git commit -. "feat: Seção de portfólio criada" (Isto basicamente significa que irei mandar isto para meu grupo/página como uma atualização, com o -m sendo o que foi alterado. Isto deixa apenas na minha maquina.)
-git push origin main (Manda para a nuvem/pessoas com qual trabalho)
- */
-
 @font-face {
     font-family: 'Montserrat';
     src: url(fonts/Montserrat-VariableFont_wght.ttf);
