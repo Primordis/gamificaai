@@ -1,0 +1,205 @@
+/* Códigos GIT para depois: PS: Git status descreve o que modifiquei, nas páginas em si (index.html e style2.css)
+Git add . 
+Git commit -. "feat: Seção de portfólio criada" (Isto basicamente significa que irei mandar isto para meu grupo/página como uma atualização, com o -m sendo o que foi alterado. Isto deixa apenas na minha maquina.)
+git push origin main (Manda para a nuvem/pessoas com qual trabalho)
+ */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Anta';
+    src: url(fonts/Anta-Regular.ttf);
+}
+
+:root {
+    --roxo-gamifica: #47208b;
+    --laranja-gamifica: #f06638;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-grid {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.banner {
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgb(53, 24, 104) 0%, rgba(52, 24, 104, 0.8) 100%), url(img/bg-room\ 1.png);
+    background-repeat: no-repeat;
+    background-position: 165% 40%;
+}
+
+header {
+    height: 165px;
+
+    img {
+        width: 234px;
+    }
+    .container-grid{
+        height: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+}
+
+.menu {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+
+    a{
+    font-size: 18px;
+    font-family: 'Anta';
+    color: white;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+    transition: text-decoration 400ms ease;
+    }
+    a:hover{
+        text-decoration-color: white;
+    }
+}
+
+.banner-content {
+    color: white;
+    font-size: 32px;
+    font-family: 'Anta';
+    height: calc(100vh - 280px);
+    display: flex;
+    justify-content: center;
+}
+
+#about {
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Anta';
+
+    padding: 100px 25%;
+    height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+        font-family: 'Montserrat';
+        text-align: left;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+}
+
+#cases {
+    text-align: center;
+    padding-bottom: 100px;
+    
+
+    h2{
+        margin-bottom: 70px;
+        font-family: 'Anta';
+    }
+}
+
+.container-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    height: 400px;
+    width: 250px;
+    background-color: var(--roxo-gamifica);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 75);
+
+    button {
+        background-color: var(--laranja-gamifica);
+        color: white;
+        width: 90%;
+        height: 40px;
+
+        border: none;
+        border-radius: 4px;
+
+        font-family: 'Montserrat';
+        font-size: 17px;
+        font-weight: 600;
+
+        cursor: pointer;
+        
+        transition: background-color 500ms ease;
+    }
+
+    button:hover{
+        background-color: #ad4929;
+    }
+
+    p {
+        color: white;
+        font-size: 16px;
+        padding: 7%;
+        font-family: 'Montserrat';
+        text-align: left;
+    }
+
+    img {
+        height: 55%;
+        width: 100%;
+        border-radius: 4px 4px 0px 0px;
+    }
+}
+
+#portfolio{
+    height: 250px;
+    background-image: url(img/bonecos.png);
+    background-size: 250px;
+    background-attachment: fixed;
+    position: relative;
+
+    .container-grid{
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .filtro{
+        height: 100%;
+        width: 100%;
+        background-color: #47208bc2;
+
+        position: absolute;
+        top: 0px;
+    }
+    
+    a{
+    color: white;
+    text-decoration: underline;
+    /* Codigo anterior usava position absolute e top. Z-index define camadas conforme outros elementos. Como no código só este item
+    possui Z-index, ele automaticamente irá para cima de tudo, mas caso tivessemos outro, caso este outro fosse >1, ele ficaria em
+    cima deste, e se fosse <1 ficaria em baixo. */
+    z-index: 1;
+    font-family: 'Anta';
+    font-size: 28px;
+    }
+
+}
