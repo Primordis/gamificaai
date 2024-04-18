@@ -213,6 +213,11 @@ header {
     padding-bottom: 100px;
     margin-bottom: 100px;
 
+    ::placeholder{
+        font-family: 'Montserrat';
+        color: #a0a0a0;
+    }
+
     label, .campo-descricao label{
         margin-bottom: 15px;
     }
@@ -255,6 +260,11 @@ header {
             border-radius: 4px;
             outline: none;
             text-indent: 10px;
+            font-family: 'Montserrat';
+        }
+
+        input:focus{
+            outline: 2px solid var(--laranja-gamifica);
         }
 
     }
@@ -275,6 +285,11 @@ header {
             outline: none;
             resize: none;
             padding: 10px;
+            font-family: 'Montserrat';
+        }
+
+        textarea:focus{
+            outline: 2px solid var(--laranja-gamifica);
         }
     }
 
@@ -289,7 +304,7 @@ header {
 
         font-family: 'Montserrat';
         font-size: 17px;
-        font-weight: 600;
+        font-weight: 700;
 
         cursor: pointer;
 
@@ -303,4 +318,45 @@ header {
     }
 
 
+}
+
+footer{
+    height: 290px;
+    background-color: var(--roxo-gamifica);
+
+    .container-grid{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .redes-sociais{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    p{
+        color: white;
+        font-family: 'Anta';
+        font-size: 24px;
+    }
+
+    .icone-redes{
+        width: 240px;
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            color: white;
+            transition: color 350ms ease;
+        }
+
+        a:hover{
+            color: var(--laranja-gamifica);
+        }
+    }
 }
