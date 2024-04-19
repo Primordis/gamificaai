@@ -19,6 +19,10 @@
     box-sizing: border-box;
 }
 
+html{
+   scroll-behavior: smooth; 
+}
+
 .container-grid {
     width: 80%;
     max-width: 1400px;
@@ -68,12 +72,44 @@ header {
 }
 
 .banner-content {
-    color: white;
-    font-size: 32px;
-    font-family: 'Anta';
+    
     height: calc(100vh - 280px);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+
+    p {color: white;
+    font-size: 32px;
+    font-family: 'Anta';}
+
+    span{
+        display: block;
+        animation: digitando 2s steps(40, end),
+        cursor 0.75s step-end infinite;
+        border-right: 5px solid var(--laranja-gamifica);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+@keyframes digitando {
+    from{
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes cursor {
+    from, to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--laranja-gamifica);
+    }
 }
 
 #about {
