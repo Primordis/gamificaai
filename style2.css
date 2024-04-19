@@ -401,6 +401,49 @@ footer{
     }
 }
 
+@media screen and (max-width: 1080px) {
+/* 
+    header {
+        position: relative;
+
+        button{
+            display: unset;
+            width: 50px;
+            border: none;
+            background: none;
+            fill: white;
+        }
+    }
+
+    nav.menu {
+        height: 500px;
+        width: 350px;
+        padding: 0px 30px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        background-color: #000000b5;
+        position: absolute;
+        right: 0;
+        top: 165px;  
+    }
+
+    #about {
+        padding: 100px 15%;
+    }
+
+    .card {
+        height: 320px;
+        width: 200px;
+    }
+
+    #contato form {
+        width: 75%;
+    } */
+}
+
 @media screen and (max-width: 1300px) {
 
     header {
