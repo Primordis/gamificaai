@@ -629,4 +629,9 @@ footer {
     footer{
         img{width: 200px;}
     }
+    #portfolio{
+        a{
+            font-size: 21px;
+        }
+    }
 }
