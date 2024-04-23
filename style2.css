@@ -394,6 +394,10 @@ footer {
         font-size: 24px;
     }
 
+    p.hide{
+        color: var(--roxo-gamifica);
+    }
+
     .icone-redes {
         width: 240px;
         display: flex;
