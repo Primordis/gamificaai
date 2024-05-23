@@ -7,6 +7,7 @@
     <title>Gamifica Ai</title>
     <link rel="stylesheet" href="style2.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -15,22 +16,57 @@
             <div class="container-grid">
                 <img src="img/logo.png"
                     alt="Logo da empresa Gamifica Ai, sendo esta um G como o do Gamecube com duas extremidades sendo um I, seguida do nome da empresa em si.">
-                <nav class="menu">
+                <nav id="menuh" class="menu">
                     <a href="#about">Sobre</a>
                     <a href="#cases">Cases de Sucesso</a>
                     <a href="#portfolio">Portfólio</a>
                     <a href="#contato">Contate-nos</a>
                 </nav>
-                <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <button onclick="abreFechaMenu()">
+                    <svg id="barras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path
                             d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                    <svg id="x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
                     </svg>
                 </button>
             </div>
         </header>
         <div class="container-grid banner-content">
-            <p>GamificaAi: <span>Inovação através da diversão!</span> </p>
+            <p>GamificaAi: <span>Inovação através da diversão!</span></p>
+            <button onclick="previousSlide()" id="back">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                    <path
+                        d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z" />
+                </svg>
+
+            </button>
+            <button onclick="nextSlide()" id="forward">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                    <path
+                        d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+                </svg>
+            </button>
+
+            <div class="botoes">
+                <button onclick="selectSlide('0')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" />
+                    </svg>
+                </button>
+                <button onclick="selectSlide('1')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" />
+                    </svg>
+                </button>
+                <button onclick="selectSlide('2')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" />
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
     <section id="about">
@@ -132,7 +168,7 @@
                                 fill="currentColor " />
                         </svg>
                     </a>
-                    
+
                 </div>
             </div>
         </div>
