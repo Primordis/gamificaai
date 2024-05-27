@@ -77,6 +77,8 @@ function selectSlide(indiceSlide) {
     // },
 // ]
 
+// npx json-server db.json no prompt de comandos.
+
 function renderCases() {
     let containerCards = document.querySelector(".container-cards")
     let template = ""
@@ -89,4 +91,51 @@ function renderCases() {
     })
 
     containerCards.innerHTML = template
+}
+
+function carregarCases() {
+    fetch("http://localhost:3000/cases")
+    .then( (resposta) => resposta.json())
+    .then( (dadosTratados) => {
+        console.log(dadosTratados)
+        listaCases = dadosTratados
+        renderCases()
+    })
+}
+
+function solicitarOrcamento() {
+    let valorNome = document.getElementById("campo-nome").value
+    let valorEmail = document.getElementById("campo-email").value
+    let valorDescricao = document.getElementById("campo-empresa").value
+    // console.log(valorNome, valorEmail, valorDescricao)
+
+    let dadosForm = {
+        nome: valorNome,
+        email: valorEmail,
+        descricao: valorDescricao
+    }
+
+    console.log(dadosForm)
+
+    fetch("http://localhost:3000/solicitacoes", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(dadosForm)
+    })
+
+    .then(resposta => {
+        console.log(resposta);
+
+        document.querySelector("#contato form").reset
+
+        alert("Solicitação enviada com sucesso! 👽👌")
+    })
+    .catch(erro => {
+        console.log(erro);
+        alert("Erro na requisição 😭😭😭")
+    })
+
+    event.preventDefault()
 }

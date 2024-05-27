@@ -1,20 +1,40 @@
 {
-    "cases": [
-        {
-            "imagem": "https://unsplash.it/600/400?image=43",
-            "descricao": "Uma empresa de tecnologia lança um desafio de gamificação onde os funcionarios devem propor e implementar ideias inovadoras."
-        },
-        {
-            "imagem": "https://unsplash.it/600/400?image=65",
-            "descricao": "Uma empresa de consultoria cria uma narrativa interativa de gamificação para seu programa de treinamento"
-        },
-        {
-            "imagem": "https://unsplash.it/600/400?image=22",
-            "descricao": "Uma empresa de vendas implementa uma competição gamificada entre equipes que competem pelo topo do ranking"
-        },
-        {
-            "imagem": "https://unsplash.it/600/400?image=94",
-            "descricao": "Uma empresa de saúde promove o bem-estar dos funcionários através de um desafio de gamificação de condicionamento físico"
-        }
-    ]
+  "cases": [
+    {
+      "imagem": "https://unsplash.it/600/400?image=43",
+      "descricao": "Uma empresa de tecnologia lança um desafio de gamificação onde os funcionarios devem propor e implementar ideias inovadoras."
+    },
+    {
+      "imagem": "https://unsplash.it/600/400?image=65",
+      "descricao": "Uma empresa de consultoria cria uma narrativa interativa de gamificação para seu programa de treinamento"
+    },
+    {
+      "imagem": "https://unsplash.it/600/400?image=22",
+      "descricao": "Uma empresa de vendas implementa uma competição gamificada entre equipes que competem pelo topo do ranking"
+    },
+    {
+      "imagem": "https://unsplash.it/600/400?image=94",
+      "descricao": "Uma empresa de saúde promove o bem-estar dos funcionários através de um desafio de gamificação de condicionamento físico"
+    }
+  ],
+  "solicitacoes": [
+    {
+      "id": "a642",
+      "nome": "123",
+      "email": "1'231@a",
+      "descricao": "23123"
+    },
+    {
+      "id": "fa3f",
+      "nome": "Thiago",
+      "email": "thiago.nascimento@gmail.com",
+      "descricao": "preciso de transplante capilar 😭"
+    },
+    {
+      "id": "0385",
+      "nome": "Tadeu",
+      "email": "tadeu@gmail.com",
+      "descricao": "bom dia multimidiers"
+    }
+  ]
 }
